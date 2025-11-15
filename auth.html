@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход / Регистрация - TalentSphere</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Auth Container -->
+  <div class="min-vh-100 d-flex align-items-center justify-content-center p-4" style="background: linear-gradient(135deg, rgba(106, 0, 255, 0.1), rgba(0, 195, 255, 0.1));">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          
+          <!-- Logo -->
+          <div class="text-center mb-4">
+            <a href="index.html" class="text-decoration-none">
+              <h2 class="text-gradient fw-bold">
+                <i class="bi bi-globe2 me-2"></i>TalentSphere
+              </h2>
+            </a>
+            <p class="text-white-50">Войдите или создайте аккаунт</p>
+          </div>
+
+          <!-- Auth Card -->
+          <div class="glass-card p-4 p-md-5">
+            
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-4 justify-content-center" id="authTabs" role="tablist">
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link active w-100" id="login-tab" data-bs-toggle="pill" data-bs-target="#login" type="button">
+                  Вход
+                </button>
+              </li>
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link w-100" id="register-tab" data-bs-toggle="pill" data-bs-target="#register" type="button">
+                  Регистрация
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="authTabContent">
+              
+              <!-- Login Form -->
+              <div class="tab-pane fade show active" id="login" role="tabpanel">
+                <form class="needs-validation" novalidate>
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-custom" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">Введите корректный email</div>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label class="form-label">Пароль</label>
+                    <input type="password" class="form-control form-control-custom" placeholder="••••••••" required>
+                    <div class="invalid-feedback">Введите пароль</div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="rememberMe">
+                      <label class="form-check-label text-white-50 small" for="rememberMe">
+                        Запомнить меня
+                      </label>
+                    </div>
+                    <a href="#" class="text-decoration-none small text-info">Забыли пароль?</a>
+                  </div>
+
+                  <button type="submit" class="btn btn-gradient w-100 mb-3">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>Войти
+                  </button>
+
+                  <div class="text-center mb-3">
+                    <small class="text-white-50">или</small>
+                  </div>
+
+                  <button type="button" class="btn btn-glass w-100">
+                    <i class="bi bi-google me-2"></i>Войти через Google
+                  </button>
+                </form>
+              </div>
+
+              <!-- Register Form -->
+              <div class="tab-pane fade" id="register" role="tabpanel">
+                <form class="needs-validation" novalidate>
+                  <div class="mb-3">
+                    <label class="form-label">Имя</label>
+                    <input type="text" class="form-control form-control-custom" placeholder="Иван Иванов" required>
+                    <div class="invalid-feedback">Введите ваше имя</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-custom" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">Введите корректный email</div>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label class="form-label">Пароль</label>
+                    <input type="password" class="form-control form-control-custom" placeholder="••••••••" required minlength="8">
+                    <div class="invalid-feedback">Минимум 8 символов</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Подтвердите пароль</label>
+                    <input type="password" class="form-control form-control-custom" placeholder="••••••••" required>
+                    <div class="invalid-feedback">Пароли должны совпадать</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Я хочу...</label>
+                    <select class="form-select form-control-custom" required>
+                      <option value="">Выберите роль</option>
+                      <option value="freelancer">Искать проекты (Фрилансер)</option>
+                      <option value="client">Нанимать специалистов (Заказчик)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                    <label class="form-check-label text-white-50 small" for="agreeTerms">
+                      Я согласен с <a href="#" class="text-info text-decoration-none">условиями использования</a>
+                    </label>
+                    <div class="invalid-feedback">Необходимо согласие</div>
+                  </div>
+
+                  <button type="submit" class="btn btn-gradient w-100 mb-3">
+                    <i class="bi bi-person-plus me-2"></i>Создать аккаунт
+                  </button>
+
+                  <div class="text-center mb-3">
+                    <small class="text-white-50">или</small>
+                  </div>
+
+                  <button type="button" class="btn btn-glass w-100">
+                    <i class="bi bi-google me-2"></i>Регистрация через Google
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Footer Link -->
+          <div class="text-center mt-4">
+            <a href="index.html" class="text-white-50 text-decoration-none">
+              <i class="bi bi-arrow-left me-2"></i>Вернуться на главную
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <style>
+    .nav-pills .nav-link {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-pills .nav-link.active {
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      border-color: transparent;
+    }
+    
+    .nav-pills .nav-link:hover:not(.active) {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: var(--gradient-end);
+    }
+  </style>
+</body>
+</html>

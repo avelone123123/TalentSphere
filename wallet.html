@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кошелек - TalentSphere</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-globe2 me-2"></i>TalentSphere
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Кабинет</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="wallet.html">Кошелек</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5 mt-5">
+    
+    <!-- Balance Card -->
+    <div class="row g-4 mb-4">
+      <div class="col-lg-8 mx-auto">
+        <div class="glass-card p-5 text-center position-relative overflow-hidden">
+          <div class="position-absolute top-0 start-0 w-100 h-100" 
+               style="background: linear-gradient(135deg, rgba(106, 0, 255, 0.1), rgba(0, 195, 255, 0.1));"></div>
+          <div class="position-relative">
+            <p class="text-white-50 mb-2">Доступный баланс</p>
+            <h1 class="display-2 fw-bold text-gradient mb-4">$12,458.50</h1>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+              <button class="btn btn-gradient" data-bs-toggle="modal" data-bs-target="#depositModal">
+                <i class="bi bi-plus-circle me-2"></i>Пополнить
+              </button>
+              <button class="btn btn-glass" data-bs-toggle="modal" data-bs-target="#withdrawModal">
+                <i class="bi bi-arrow-up-circle me-2"></i>Вывести
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="stat-card">
+          <p class="text-white-50 mb-2">Заработано за месяц</p>
+          <h3 class="stat-value mb-0">$3,250</h3>
+          <small class="text-success"><i class="bi bi-arrow-up"></i> +12% от прошлого</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-card">
+          <p class="text-white-50 mb-2">В процессе вывода</p>
+          <h3 class="stat-value mb-0">$850</h3>
+          <small class="text-warning"><i class="bi bi-clock"></i> Обработка</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-card">
+          <p class="text-white-50 mb-2">Всего заработано</p>
+          <h3 class="stat-value mb-0">$87,500</h3>
+          <small class="text-info"><i class="bi bi-graph-up"></i> 127 проектов</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Income Level -->
+    <div class="glass-card p-4 mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="fw-bold mb-0">Уровень дохода</h5>
+        <span class="badge bg-gradient px-3 py-2">Pro Level</span>
+      </div>
+      <div class="progress progress-custom mb-2" style="height: 20px;">
+        <div class="progress-bar progress-bar-custom" style="width: 75%"></div>
+      </div>
+      <div class="d-flex justify-content-between text-white-50 small">
+        <span>$75,000 / $100,000</span>
+        <span>До Elite: $25,000</span>
+      </div>
+    </div>
+
+    <!-- Escrow Deals -->
+    <div class="glass-card p-4 mb-4">
+      <h5 class="fw-bold mb-3">Escrow сделки</h5>
+      <div class="table-responsive">
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th>Проект</th>
+              <th>Заказчик</th>
+              <th>Сумма</th>
+              <th>Статус</th>
+              <th>Действие</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Landing Page Design</td>
+              <td>John Smith</td>
+              <td class="text-info fw-bold">$150</td>
+              <td><span class="badge bg-warning">В работе</span></td>
+              <td>
+                <button class="btn btn-sm btn-glass">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Mobile App UI</td>
+              <td>Sarah Connor</td>
+              <td class="text-info fw-bold">$800</td>
+              <td><span class="badge bg-success">Защищено</span></td>
+              <td>
+                <button class="btn btn-sm btn-glass">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>E-commerce Platform</td>
+              <td>Mike Johnson</td>
+              <td class="text-info fw-bold">$2500</td>
+              <td><span class="badge bg-info">Ожидание</span></td>
+              <td>
+                <button class="btn btn-sm btn-glass">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Transaction History -->
+    <div class="glass-card p-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="fw-bold mb-0">История операций</h5>
+        <button class="btn btn-glass btn-sm">
+          <i class="bi bi-download me-2"></i>Экспорт
+        </button>
+      </div>
+      
+      <div class="table-responsive">
+        <table class="table table-custom">
+          <thead>
+            <tr>
+              <th>Дата</th>
+              <th>Описание</th>
+              <th>Тип</th>
+              <th>Сумма</th>
+              <th>Статус</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>15 Ноя 2024</td>
+              <td>Оплата за проект "Dashboard UI"</td>
+              <td><span class="badge bg-success">Доход</span></td>
+              <td class="text-success fw-bold">+$800</td>
+              <td><span class="badge bg-success">Завершено</span></td>
+            </tr>
+            <tr>
+              <td>12 Ноя 2024</td>
+              <td>Вывод средств на карту</td>
+              <td><span class="badge bg-danger">Вывод</span></td>
+              <td class="text-danger fw-bold">-$500</td>
+              <td><span class="badge bg-success">Завершено</span></td>
+            </tr>
+            <tr>
+              <td>10 Ноя 2024</td>
+              <td>Оплата за проект "Mobile App"</td>
+              <td><span class="badge bg-success">Доход</span></td>
+              <td class="text-success fw-bold">+$1200</td>
+              <td><span class="badge bg-success">Завершено</span></td>
+            </tr>
+            <tr>
+              <td>08 Ноя 2024</td>
+              <td>Комиссия платформы</td>
+              <td><span class="badge bg-warning">Комиссия</span></td>
+              <td class="text-warning fw-bold">-$50</td>
+              <td><span class="badge bg-success">Завершено</span></td>
+            </tr>
+            <tr>
+              <td>05 Ноя 2024</td>
+              <td>Оплата за проект "Landing Page"</td>
+              <td><span class="badge bg-success">Доход</span></td>
+              <td class="text-success fw-bold">+$350</td>
+              <td><span class="badge bg-success">Завершено</span></td>
+            </tr>
+            <tr>
+              <td>03 Ноя 2024</td>
+              <td>Вывод средств на PayPal</td>
+              <td><span class="badge bg-danger">Вывод</span></td>
+              <td class="text-danger fw-bold">-$1000</td>
+              <td><span class="badge bg-success">Завершено</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Deposit Modal -->
+  <div class="modal fade" id="depositModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h5 class="modal-title">Пополнить баланс</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Сумма ($)</label>
+            <input type="number" class="form-control form-control-custom" placeholder="100">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Способ оплаты</label>
+            <select class="form-select form-control-custom">
+              <option>Банковская карта</option>
+              <option>PayPal</option>
+              <option>Cryptocurrency</option>
+            </select>
+          </div>
+          <div class="alert alert-info bg-transparent border-info">
+            <i class="bi bi-info-circle me-2"></i>
+            Средства поступят в течение 5-10 минут
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Отмена</button>
+          <button type="button" class="btn btn-gradient">Пополнить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Withdraw Modal -->
+  <div class="modal fade" id="withdrawModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h5 class="modal-title">Вывести средства</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Сумма ($)</label>
+            <div class="input-group">
+              <input type="number" class="form-control form-control-custom" placeholder="100">
+              <button class="btn btn-glass">Все</button>
+            </div>
+            <small class="text-white-50">Доступно: $12,458.50</small>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Метод вывода</label>
+            <select class="form-select form-control-custom">
+              <option>Банковская карта (**** 1234)</option>
+              <option>PayPal (user@email.com)</option>
+              <option>Wise Transfer</option>
+            </select>
+          </div>
+          <div class="alert alert-warning bg-transparent border-warning">
+            <i class="bi bi-exclamation-triangle me-2"></i>
+            Комиссия: 2% | Срок: 1-3 рабочих дня
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Отмена</button>
+          <button type="button" class="btn btn-gradient">Вывести</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

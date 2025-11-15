@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль - TalentSphere</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-globe2 me-2"></i>TalentSphere
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Кабинет</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="profile.html">Профиль</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5 mt-5">
+    
+    <!-- Profile Header -->
+    <div class="glass-card p-4 p-md-5 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-auto text-center mb-4 mb-md-0">
+          <img src="https://via.placeholder.com/150" alt="Profile" class="profile-avatar">
+          <button class="btn btn-glass btn-sm mt-3 w-100">
+            <i class="bi bi-camera me-2"></i>Изменить фото
+          </button>
+        </div>
+        
+        <div class="col-md">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <h2 class="fw-bold mb-1">Александр Петров</h2>
+              <p class="text-gradient fw-bold mb-2">Full-stack Developer & UI/UX Designer</p>
+              <div class="star-rating mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="ms-2 text-white-50">(4.9 / 124 отзывов)</span>
+              </div>
+              <p class="text-white-50 mb-0">
+                <i class="bi bi-geo-alt me-2"></i>Москва, Россия
+              </p>
+            </div>
+            <button class="btn btn-gradient">
+              <i class="bi bi-pencil me-2"></i>Редактировать
+            </button>
+          </div>
+
+          <p class="text-white-50 mb-3">
+            Опытный разработчик с 8+ лет опыта в создании веб-приложений. Специализируюсь на React, Node.js 
+            и современных технологиях. Создаю красивые и функциональные интерфейсы.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#" class="social-icon small">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" class="social-icon small">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="social-icon small">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="social-icon small">
+              <i class="bi bi-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      
+      <!-- Left Column -->
+      <div class="col-lg-8">
+        
+        <!-- Skills -->
+        <div class="glass-card p-4 mb-4">
+          <h4 class="fw-bold mb-3">Навыки</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge-custom">JavaScript</span>
+            <span class="badge-custom">React</span>
+            <span class="badge-custom">Node.js</span>
+            <span class="badge-custom">TypeScript</span>
+            <span class="badge-custom">Next.js</span>
+            <span class="badge-custom">MongoDB</span>
+            <span class="badge-custom">PostgreSQL</span>
+            <span class="badge-custom">Figma</span>
+            <span class="badge-custom">UI/UX Design</span>
+            <span class="badge-custom">Tailwind CSS</span>
+            <span class="badge-custom">Git</span>
+            <span class="badge-custom">Docker</span>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="mb-4">
+          <h4 class="fw-bold mb-3">Портфолио</h4>
+          <div class="row g-3">
+            
+            <div class="col-md-6">
+              <div class="project-card overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" class="w-100" alt="Project">
+                <div class="p-3">
+                  <h6 class="fw-bold mb-1">E-commerce Dashboard</h6>
+                  <p class="text-white-50 small mb-2">React, TailwindCSS, Chart.js</p>
+                  <span class="text-white-50 small">Сентябрь 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" class="w-100" alt="Project">
+                <div class="p-3">
+                  <h6 class="fw-bold mb-1">Mobile Banking App</h6>
+                  <p class="text-white-50 small mb-2">React Native, Firebase</p>
+                  <span class="text-white-50 small">Август 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" class="w-100" alt="Project">
+                <div class="p-3">
+                  <h6 class="fw-bold mb-1">SaaS Landing Page</h6>
+                  <p class="text-white-50 small mb-2">Next.js, Framer Motion</p>
+                  <span class="text-white-50 small">Июль 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" class="w-100" alt="Project">
+                <div class="p-3">
+                  <h6 class="fw-bold mb-1">AI Chat Interface</h6>
+                  <p class="text-white-50 small mb-2">Vue.js, OpenAI API</p>
+                  <span class="text-white-50 small">Июнь 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" class="w-100" alt="Project">
+                <div class="p-3">
+                  <h6 class="fw-bold mb-1">Task Management System</h6>
+                  <p class="text-white-50 small mb-2">MERN Stack, Socket.io</p>
+                  <span class="text-white-50 small">Май 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" class="w-100" alt="Project">
+                <div class="p-3">
+                  <h6 class="fw-bold mb-1">Real Estate Platform</h6>
+                  <p class="text-white-50 small mb-2">Next.js, Prisma, MapBox</p>
+                  <span class="text-white-50 small">Апрель 2024</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="glass-card p-4">
+          <h4 class="fw-bold mb-4">Отзывы клиентов</h4>
+          
+          <!-- Review 1 -->
+          <div class="mb-4 pb-4 border-bottom border-secondary">
+            <div class="d-flex mb-3">
+              <div class="bg-gradient rounded-circle" style="width: 50px; height: 50px; min-width: 50px;"></div>
+              <div class="ms-3 flex-grow-1">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <p class="mb-1 fw-bold">Sarah Johnson</p>
+                    <div class="star-rating small">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <small class="text-white-50">2 недели назад</small>
+                </div>
+                <p class="text-white-50 mb-0 mt-2">
+                  Отличная работа! Александр выполнил проект быстрее срока и превзошел все ожидания. 
+                  Профессионал своего дела!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="mb-4 pb-4 border-bottom border-secondary">
+            <div class="d-flex mb-3">
+              <div class="bg-gradient rounded-circle" style="width: 50px; height: 50px; min-width: 50px;"></div>
+              <div class="ms-3 flex-grow-1">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <p class="mb-1 fw-bold">Mike Chen</p>
+                    <div class="star-rating small">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <small class="text-white-50">1 месяц назад</small>
+                </div>
+                <p class="text-white-50 mb-0 mt-2">
+                  Очень доволен результатом. Отличная коммуникация и внимание к деталям. 
+                  Обязательно буду работать снова!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="mb-0">
+            <div class="d-flex mb-3">
+              <div class="bg-gradient rounded-circle" style="width: 50px; height: 50px; min-width: 50px;"></div>
+              <div class="ms-3 flex-grow-1">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <p class="mb-1 fw-bold">Emma Wilson</p>
+                    <div class="star-rating small">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                  <small class="text-white-50">2 месяца назад</small>
+                </div>
+                <p class="text-white-50 mb-0 mt-2">
+                  Хороший специалист, но были небольшие задержки в коммуникации. 
+                  В целом результатом доволен.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        
+        <!-- Stats -->
+        <div class="glass-card p-4 mb-4">
+          <h5 class="fw-bold mb-3">Статистика</h5>
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-white-50">Завершено проектов</span>
+              <span class="fw-bold text-gradient">127</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-white-50">В работе</span>
+              <span class="fw-bold">8</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-white-50">Заработано</span>
+              <span class="fw-bold text-gradient">$87,500</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-white-50">Успешность</span>
+              <span class="fw-bold text-success">98%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="glass-card p-4 mb-4">
+          <h5 class="fw-bold mb-3">Языки</h5>
+          <div class="mb-2">
+            <div class="d-flex justify-content-between mb-1">
+              <span>Русский</span>
+              <span class="text-white-50">Родной</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            <div class="d-flex justify-content-between mb-1">
+              <span>Английский</span>
+              <span class="text-white-50">Свободно</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="glass-card p-4 mb-4">
+          <h5 class="fw-bold mb-3">Сертификаты</h5>
+          <div class="mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-award-fill text-gradient fs-4 me-3"></i>
+              <div>
+                <p class="mb-0 fw-bold">AWS Certified Developer</p>
+                <small class="text-white-50">Amazon Web Services</small>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-award-fill text-gradient fs-4 me-3"></i>
+              <div>
+                <p class="mb-0 fw-bold">React Expert</p>
+                <small class="text-white-50">Meta</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Availability -->
+        <div class="glass-card p-4">
+          <h5 class="fw-bold mb-3">Доступность</h5>
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-success rounded-circle" style="width: 12px; height: 12px;"></div>
+            <span class="ms-2">Доступен для новых проектов</span>
+          </div>
+          <p class="text-white-50 small mb-0">
+            <i class="bi bi-clock me-2"></i>Обычно отвечает в течение 1 часа
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

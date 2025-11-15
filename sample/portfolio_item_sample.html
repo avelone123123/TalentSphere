@@ -1,0 +1,81 @@
+<!-- Portfolio Item Sample -->
+<!-- Используйте этот шаблон для элементов портфолио -->
+
+<div class="col-md-6">
+  <div class="project-card overflow-hidden">
+    <!-- Изображение проекта -->
+    <img src="https://via.placeholder.com/400x300" class="w-100" alt="Project">
+    
+    <!-- Информация о проекте -->
+    <div class="p-3">
+      <h6 class="fw-bold mb-1">UI Dashboard Concept</h6>
+      <p class="text-white-50 small mb-2">React, TailwindCSS, Chart.js</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="text-white-50 small">
+          <i class="bi bi-calendar3 me-1"></i>Июль 2025
+        </span>
+        <a href="#" class="btn btn-sm btn-glass">
+          <i class="bi bi-eye me-1"></i>Смотреть
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Альтернативный вариант с hover-эффектом -->
+<div class="col-md-6">
+  <div class="project-card overflow-hidden position-relative">
+    <img src="https://via.placeholder.com/400x300" class="w-100" alt="Project">
+    
+    <!-- Overlay при наведении -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
+         style="background: rgba(106, 0, 255, 0); transition: all 0.3s ease;">
+      <a href="#" class="btn btn-gradient opacity-0">
+        <i class="bi bi-eye me-2"></i>Просмотр
+      </a>
+    </div>
+    
+    <div class="p-3">
+      <h6 class="fw-bold mb-1">Mobile Banking App</h6>
+      <p class="text-white-50 small mb-2">React Native, Firebase</p>
+      <span class="text-white-50 small">
+        <i class="bi bi-calendar3 me-1"></i>Август 2025
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Компактный вариант для списка -->
+<div class="d-flex align-items-center p-3 glass-card mb-3">
+  <div class="bg-gradient rounded-3" style="width: 60px; height: 60px; min-width: 60px;"></div>
+  <div class="ms-3 flex-grow-1">
+    <h6 class="fw-bold mb-1">SaaS Landing Page</h6>
+    <p class="text-white-50 small mb-0">
+      <i class="bi bi-code-slash me-1"></i>Next.js, Framer Motion
+      <span class="mx-2">•</span>
+      <i class="bi bi-calendar3 me-1"></i>Июнь 2025
+    </p>
+  </div>
+  <a href="#" class="btn btn-glass btn-sm">
+    <i class="bi bi-arrow-right"></i>
+  </a>
+</div>
+
+<!--
+Рекомендации:
+- Используйте placeholder изображения или реальные скриншоты проектов
+- Размер изображений: 400x300px или 800x600px для лучшего качества
+- Добавьте технологии, используемые в проекте
+- Укажите дату завершения проекта
+-->
+
+<style>
+/* Добавьте в ваш CSS для hover-эффекта */
+.project-card:hover .position-absolute {
+  background: rgba(106, 0, 255, 0.8) !important;
+}
+
+.project-card:hover .btn-gradient {
+  opacity: 1 !important;
+}
+</style>
